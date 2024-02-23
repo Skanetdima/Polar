@@ -99,4 +99,30 @@ main .firstContainer h1 {
 }
 main .firstContainer h1 b {
   color: #d23166;
+}
+main .secondContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2vw;
+}
+main .secondContainer .secondContainerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 7px;
+  border: solid 1px rgba(0, 0, 0, 0.03);
+  font-family: "Hind Madurai";
+  text-align: center;
+  padding: 2vw;
+}
+main .secondContainer .secondContainerItem h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+main .secondContainer .secondContainerItem p {
+  font-size: 14px;
+  opacity: 0.6;
 }/*# sourceMappingURL=style.css.map */

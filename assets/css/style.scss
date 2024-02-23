@@ -126,5 +126,35 @@ main {
     }
 
     // Second Container
-    .secondContainer {}
+    .secondContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 2vw;
+
+        .secondContainerItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 7px;
+            border: solid 1px rgba(0, 0, 0, 0.03);
+            font-family: $HindMadurai;
+            text-align: center;
+            padding: 2vw;
+
+            h4 {
+                font-size: 20px;
+                font-weight: 600;
+                color: #000;
+            }
+
+            p {
+                font-size: 14px;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .thirdContainer {}
 }
