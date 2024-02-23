@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .logo img {
+  width: 79px;
+  height: 79px;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 40px;
+}
+header nav ul a {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  opacity: 0.6;
+  color: #150101;
+  transition: 0.4s ease-in-out;
+}
+header nav ul a:hover {
+  opacity: 1;
+  font-size: 15px;
+  font-weight: bold;
+  color: #d23166;
+}
+header button {
+  color: #fafafa;
+  background-color: #d23166;
+  padding: 14px 50px 13px;
+  border-radius: 5px;
+  font-family: "Hind Madurai";
+  font-weight: bold;
+  border: 1px solid #000;
+}
+header button a {
+  color: #fafafa;
+}
+
+main .firstContainer {
+  display: flex;
+  flex-direction: column;
+  height: 862px;
+  justify-content: center;
+  padding-left: 8vw;
+  align-items: first baseline;
+  background: url("../images/firstContainerWave.png") no-repeat, url("../images/firstContainerIceCream.png") no-repeat, url("../images/Elipse_18.svg") no-repeat, #f2ceda;
+  background-position: 114% 85%, right center, 90% 82%;
+}
+main .firstContainer button {
+  margin-top: 3vw;
+  background-color: #d23166;
+  padding: 14px 50px 13px;
+  border-radius: 5px;
+  font-family: "Hind Madurai";
+  font-weight: bold;
+}
+main .firstContainer button a {
+  color: #fafafa;
+}
+main .firstContainer p {
+  font-family: "Hind Madurai";
+  opacity: 0.6;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  color: #0f0101;
+}
+main .firstContainer h5 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  color: #0f0101;
+}
+main .firstContainer h1 {
+  font-family: "Fredoka";
+  font-weight: bold;
+  font-size: 57.3px;
+  line-height: 1.21;
+}
+main .firstContainer h1 b {
+  color: #d23166;
+}/*# sourceMappingURL=style.css.map */
