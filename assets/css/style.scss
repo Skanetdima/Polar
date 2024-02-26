@@ -130,7 +130,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin-top: 2vw;
+        margin: 2vw 0;
 
         .secondContainerItem {
             display: flex;
@@ -156,5 +156,229 @@ main {
         }
     }
 
-    .thirdContainer {}
+    .thirdContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background: url("../images/thirdBackground.png") no-repeat #F8EDF0;
+        background-position: right center;
+        height: 544.5px;
+        padding-left: 8vw;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2vw;
+            background-color: #d23166;
+            padding: 15px 42px;
+            border-radius: 5px;
+            font-family: "Hind Madurai";
+            font-weight: bold;
+
+            a {
+                color: #fafafa;
+            }
+        }
+
+        h2 {
+            font-family: $HindMadurai;
+            font-size: 44.2px;
+            font-weight: 600;
+            font-stretch: normal;
+            line-height: 1.11;
+            color: #150101;
+        }
+
+        p {
+            opacity: 0.6;
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #150101;
+        }
+    }
+
+    // Fourth container
+    .fourthContainer {
+        .fourthContainerHeading {
+            font-family: $HindMadurai;
+            font-size: 44.2px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #150101;
+            padding: 4vw 0 2vw 0;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .fourthSelectContainer {
+            display: flex;
+            gap: 2vw;
+
+            a {
+                opacity: 0.6;
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 500;
+                color: #000;
+                transition: 0.4s ease-in-out;
+            }
+
+            a:hover {
+                opacity: 1;
+                border-bottom: 3px solid #d64374;
+            }
+        }
+    }
+
+    .fourthItemContainer {
+        display: flex;
+        align-items: center;
+        gap: 5vw;
+
+        .fourthItemTextContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #d23166;
+                padding: 15px 42px;
+                border-radius: 5px;
+                font-family: "Hind Madurai";
+                font-weight: bold;
+
+                a {
+                    color: #fafafa;
+                }
+            }
+        }
+
+        p {
+            opacity: 0.7;
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #000;
+            max-width: 454px;
+        }
+
+        h4 {
+            font-family: $HindMadurai;
+            font-size: 26px;
+            font-weight: bold;
+            color: #000;
+        }
+
+    }
+
+    .priceH6Container {
+        width: 100%;
+        max-width: 134px;
+        display: flex;
+        margin-top: 2vw;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: space-between;
+        font-family: $HindMadurai;
+        color: #000;
+        font-weight: 500;
+
+        span {
+            font-size: 26px;
+        }
+
+        p {
+            text-decoration: line-through;
+            opacity: 0.7;
+            font-family: $HindMadurai;
+            font-size: 20px;
+        }
+    }
+
+    .fourthItemContainer:nth-child(4) {
+        flex-direction: row-reverse;
+
+        .fourthItemTextContainer {
+            align-items: flex-end;
+        }
+
+        p {
+            text-align: right;
+        }
+    }
+
+    .fourthItemContainer:last-child {
+        flex-direction: row-reverse;
+
+        .fourthReviewContainer {
+            .fourthReviewTextContainer {
+                blockquote>span:before {
+                    content: '\f10d';
+                    color: #f6762c;
+                    font-size: 25px;
+                    flex-grow: 0;
+                    margin: 0 0 0 0.8px;
+                    transform: rotate(-180deg);
+                }
+
+                blockquote>span:after {
+                    content: '”';
+                    width: 5.1px;
+                    color: #f6762c;
+                    font-size: 25px;
+                    flex-grow: 0;
+                    margin: 0 0 0 0.8px;
+                    transform: rotate(180deg);
+                }
+
+                span {
+                    display: block;
+                    width: 100%;
+                    max-width: 322px;
+                    opacity: 0.7;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.5;
+                    color: #000;
+                }
+            }
+
+            .fourthContainerAvatar {
+                display: flex;
+                align-items: center;
+                gap: 1vw;
+
+                div {
+                    font-family: Roboto;
+
+                    span {
+                        font-size: 24px;
+                    }
+
+                    p {
+                        opacity: 0.7;
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
 }
