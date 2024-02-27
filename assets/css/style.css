@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
@@ -270,21 +269,16 @@ main .fourthItemContainer:last-child {
   flex-direction: row-reverse;
 }
 main .fourthItemContainer:last-child .fourthReviewContainer .fourthReviewTextContainer blockquote > span:before {
-  content: "\f10d";
+  content: url("../images/Vector.svg") url("../images/Vector.svg");
   color: #f6762c;
   font-size: 25px;
-  flex-grow: 0;
-  margin: 0 0 0 0.8px;
-  transform: rotate(-180deg);
+  margin-right: 0.5vw;
 }
 main .fourthItemContainer:last-child .fourthReviewContainer .fourthReviewTextContainer blockquote > span:after {
-  content: "”";
-  width: 5.1px;
+  content: url("../images/Vector_1_.svg") url("../images/Vector_1_.svg");
   color: #f6762c;
   font-size: 25px;
-  flex-grow: 0;
-  margin: 0 0 0 0.8px;
-  transform: rotate(180deg);
+  margin-left: 0.5vw;
 }
 main .fourthItemContainer:last-child .fourthReviewContainer .fourthReviewTextContainer span {
   display: block;
@@ -315,4 +309,188 @@ main .fourthItemContainer:last-child .fourthReviewContainer .fourthContainerAvat
   font-size: 12px;
   font-weight: 500;
   color: #000;
+}
+main .fourthItemContainer:last-child .fourthReviewContainer .fourthCarouselContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vw;
+}
+main .fourthItemContainer:last-child .fourthReviewContainer .fourthCarouselContainer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+main .fourthItemContainer:last-child .fourthReviewContainer .fourthCarouselContainer div img {
+  border-radius: 20px;
+}
+main .fifthContainer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8.5vw;
+  background: #F8EDF0;
+}
+main .fifthContainer .fifthContainerLinks {
+  display: flex;
+  align-items: center;
+}
+main .fifthContainer .fifthTextContainer {
+  font-family: Roboto;
+}
+main .fifthContainer .fifthTextContainer span {
+  font-size: 44.2px;
+  font-weight: 500;
+}
+main .fifthContainer .fifthTextContainer ul {
+  margin-top: 1vw;
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 1vw;
+}
+main .fifthContainer .fifthTextContainer ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vw;
+}
+main .fifthContainer .fifthTextContainer ul li div {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 5px;
+  justify-content: center;
+}
+main .fifthContainer .fifthTextContainer p {
+  opacity: 0.7;
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  text-align: left;
+  color: #0f0101;
+  width: 100%;
+  max-width: 607px;
+}
+main .sixthContainer {
+  padding: 8vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Roboto;
+}
+main .sixthContainer #sixthHeading {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 500;
+}
+main .sixthContainer form {
+  display: flex;
+  flex-direction: column;
+}
+main .sixthContainer form div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .sixthContainer form label {
+  margin-bottom: 20px;
+}
+main .sixthContainer form #question {
+  display: flex;
+  padding: 24px;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #FAFAFA;
+}
+main .sixthContainer form #submit {
+  padding: 20px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  color: #fff;
+  background-color: #d23166;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #000;
+  padding: 6vw;
+}
+footer .footerLogo {
+  width: 79px;
+}
+footer .footerItems {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  font-family: Roboto;
+}
+footer .footerItems .footerItem {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+}
+footer .footerItems .footerItem a {
+  opacity: 0.7;
+  font-size: 12px;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+}
+footer .footerItems .footerItem a:hover {
+  opacity: 1;
+}
+footer .footerItems .footerItem span {
+  opacity: 0.7;
+  line-height: 1.4;
+  letter-spacing: 0.12px;
+  color: #fff;
+}
+footer .footerItems .footerItem p {
+  margin-top: 1vw;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+footer .footerItems .footerItem ul {
+  margin-top: 1vw;
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+footer .footerItems .footerItem form {
+  font-size: 14px;
+  color: #fafafa;
+}
+footer .footerItems .footerItem form label {
+  font-size: 16px;
+}
+footer .footerItems .footerItem form div {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: solid 2px rgba(214, 67, 116, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footerItems .footerItem form #email {
+  color: #FFFFFF;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+}
+footer .footerItems .footerItem form #submitFooter {
+  opacity: 1;
+  border-radius: 5px;
+  padding: 16px;
+  font-size: 20px;
+  color: #fafafa;
+  background-color: #D23166;
 }/*# sourceMappingURL=style.css.map */

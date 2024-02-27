@@ -325,22 +325,17 @@ main {
         .fourthReviewContainer {
             .fourthReviewTextContainer {
                 blockquote>span:before {
-                    content: '\f10d';
+                    content: url("../images/Vector.svg") url("../images/Vector.svg");
                     color: #f6762c;
                     font-size: 25px;
-                    flex-grow: 0;
-                    margin: 0 0 0 0.8px;
-                    transform: rotate(-180deg);
+                    margin-right: 0.5vw;
                 }
 
                 blockquote>span:after {
-                    content: '”';
-                    width: 5.1px;
+                    content: url("../images/Vector_1_.svg") url("../images/Vector_1_.svg");
                     color: #f6762c;
                     font-size: 25px;
-                    flex-grow: 0;
-                    margin: 0 0 0 0.8px;
-                    transform: rotate(180deg);
+                    margin-left: 0.5vw;
                 }
 
                 span {
@@ -378,7 +373,229 @@ main {
                     }
                 }
             }
+
+            .fourthCarouselContainer {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 1vw;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1vw;
+
+                    img {
+                        border-radius: 20px;
+                    }
+                }
+            }
         }
     }
 
+    // Fifth Container
+    .fifthContainer {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8.5vw;
+
+        background: #F8EDF0;
+
+        .fifthContainerLinks {
+            display: flex;
+            align-items: center;
+        }
+
+        .fifthTextContainer {
+            font-family: Roboto;
+
+            span {
+                font-size: 44.2px;
+                font-weight: 500;
+            }
+
+            ul {
+                margin-top: 1vw;
+                list-style: none;
+                display: grid;
+                grid-template-rows: repeat(3, auto);
+                row-gap: 1vw;
+
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1vw;
+
+                    div {
+                        display: flex;
+                        width: 30px;
+                        height: 30px;
+                        align-items: center;
+                        background-color: #fafafa;
+                        border-radius: 5px;
+                        justify-content: center;
+                    }
+                }
+
+            }
+
+            p {
+                opacity: 0.7;
+                font-size: 18px;
+                letter-spacing: 0.18px;
+                text-align: left;
+                color: #0f0101;
+                width: 100%;
+                max-width: 607px;
+            }
+        }
+    }
+
+    // Sixth container
+    .sixthContainer {
+        padding: 8vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: Roboto;
+
+        #sixthHeading {
+            text-align: center;
+            font-size: 44px;
+            font-weight: 500;
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            label {
+                margin-bottom: 20px;
+            }
+
+            #question {
+                display: flex;
+                padding: 24px;
+                align-items: center;
+                width: 100%;
+                border-radius: 5px;
+                background-color: #FAFAFA;
+            }
+
+            #submit {
+                padding: 20px;
+                font-family: Roboto;
+                font-size: 20px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                color: #fff;
+                background-color: #d23166;
+                border-radius: 5px;
+            }
+
+        }
+    }
+}
+
+// Footer
+
+footer {
+    background-color: #000;
+    padding: 6vw;
+
+    .footerLogo {
+        width: 79px;
+    }
+
+    .footerItems {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        font-family: Roboto;
+
+        .footerItem {
+            display: grid;
+            grid-template-rows: repeat(6, auto);
+
+            a {
+                opacity: 0.7;
+                font-size: 12px;
+                color: #fff;
+                transition: .4s ease-in-out;
+            }
+
+            a:hover {
+                opacity: 1;
+            }
+
+            span {
+                opacity: 0.7;
+                line-height: 1.4;
+                letter-spacing: 0.12px;
+                color: #fff;
+            }
+
+            p {
+                margin-top: 1vw;
+                font-size: 12px;
+                font-weight: 500;
+                color: #fff;
+            }
+
+            ul {
+                margin-top: 1vw;
+                display: flex;
+                list-style-type: none;
+                gap: 10px;
+            }
+
+            form {
+                font-size: 14px;
+                color: #fafafa;
+
+                label {
+                    font-size: 16px;
+                }
+
+                div {
+                    margin-top: 20px;
+                    border-radius: 5px;
+                    border: solid 2px rgba(214, 67, 116, 0.6);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                #email {
+                    color: #FFFFFF;
+                    opacity: 0.6;
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px;
+                    border-radius: 5px;
+                }
+
+                #submitFooter {
+                    opacity: 1;
+                    border-radius: 5px;
+                    padding: 16px;
+                    font-size: 20px;
+                    color: #fafafa;
+                    background-color: #D23166;
+                }
+            }
+        }
+    }
 }
