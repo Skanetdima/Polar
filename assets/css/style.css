@@ -460,6 +460,7 @@ footer .footerItems .footerItem p {
 footer .footerItems .footerItem ul {
   margin-top: 1vw;
   display: flex;
+  align-items: center;
   list-style-type: none;
   gap: 10px;
 }
